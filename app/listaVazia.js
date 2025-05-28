@@ -7,8 +7,12 @@ export default function listaVazia() {
     titulosDados.forEach((titulo) => {
         const itemListaDados = document.createElement('li');
         const paragrafoTxt = document.createElement('p');
+        const imagem = document.querySelector('.imagem-padrao');
+        
+        imagem.src = '/img/usericon.png';
         paragrafoTxt.innerText = `${titulo}:`;
         itemListaDados.appendChild(paragrafoTxt);
         listaDados.appendChild(itemListaDados);
+
     });
 };

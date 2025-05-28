@@ -9,7 +9,7 @@ export default function criarListaComDados(dados) {
         const itemListaDados = document.createElement('li');
         const paragrafoTxt = document.createElement('p');
         if (dado === null) {
-            paragrafoTxt.innerText = `${titulosDados[indice]}: Nenhum no momento`;    
+            paragrafoTxt.innerText = `${titulosDados[indice]}: Nenhum`;    
         } else {
             paragrafoTxt.innerText = `${titulosDados[indice]}: ${dado}`;
         }

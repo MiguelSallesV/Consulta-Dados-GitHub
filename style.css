@@ -23,20 +23,23 @@ body {
 }
 
 main {
+    width: 44rem;
     display: flex;
     flex-direction: column;
     gap: 29px;
-    padding: 58px 50px;
+    padding: 50px;
+    margin: 50px;
     border-radius: 1em;
     background-color: var(--cor-background-container);
 }
 
-main h1 {
-   width: 700px;
+main h2 {
+   width: auto;
    text-align: center;
    font-size: 40px;
    font-weight: 600; 
 }
+
 
 .container-dados {
     display: flex;
@@ -53,7 +56,7 @@ main h1 {
 .container-dados img {
     width: 200px;
     height: 200px;
-    margin: 1em 2em 1em 1em;
+    margin-right: 2em;
 }
 
 .lista-dados {
@@ -84,29 +87,29 @@ main h1 {
 }
 
 .container-inputbtn input {
+    width: 30%;
     background-color: var(--cor-principal);
     font-family: var(--fonte-principal);
     padding: 12px;
-    padding-right: 30px;
     border-radius: 16px;
     outline: none;
     border-style: none;
     font-weight: 600;
-
+    
     background-image: url('img/githubicon.svg');
     background-repeat: no-repeat;
     background-size: 17px 17px;
-    background-position: right 30px center;
+    background-position-y: center;
+    background-position-x: 90%;
 }
 
 .container-inputbtn input::placeholder {
-        color: var(--cor-background);
-        font-family: var(--fonte-principal);
-        text-align: center;
-        font-weight: 600;
-        padding-right: 20px;
-        padding-right: 8px;
-        letter-spacing: -1px;     
+    color: var(--cor-background);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    font-weight: 600;
+    padding-right: 20px;
+    letter-spacing: -1px;     
 }
 
 .btn {
@@ -122,7 +125,7 @@ main h1 {
     width: 30%;
     padding: 12px;
     padding-right: 30px;
-
+    
     color: var(--cor-principal);
     font-weight: 600;
     font-size: 20px;
@@ -142,7 +145,7 @@ main h1 {
 .container-inputbtn .btn-gerar::after {
     content: '';
     position: absolute;
-    background-image: url('img/icon-purple.png');
+    background-image: url('img/gerardados.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -166,8 +169,157 @@ main h1 {
     margin-left: 8px;
 }
 
+.footer-container {
+    margin-top: 1.5em;
+    text-align: center;
+    align-items: center;
+}
 
+@media (max-width: 766px) {
+    
+    main {
+        gap: 25px;
+    }
+    
+    main h2 {
+        font-size: 30px;
+    }
+    
+    .container-dados img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .lista-dados li p {
+        font-size: 14px;
+    }
 
+    .container-inputbtn {
+        gap: 20px;
+    }
+    
+    .container-inputbtn button{
+        font-size: 16px;
+    }
+
+    .container-inputbtn input {
+        font-size: 10px;
+    }
+
+    .container-inputbtn input::placeholder{
+        font-size: 10px;
+    }
+
+    .footer-container {
+        margin-top: 1em;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 628px) {
+
+    main {
+        padding: 28px;
+        margin: 0px 70px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    .lista-dados li p {
+        font-size: 12px;
+    }
+
+    .container-dados img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .container-inputbtn input::placeholder {
+        font-size: 9px;
+    }
+
+    .container-inputbtn input {
+        font-size: 9px;
+    }
+
+    .container-inputbtn button {
+        font-size: 12px;
+    }
+
+    .container-inputbtn .btn-gerar::after {
+        top: 10%;
+        width: 35px;
+        height: 35px;     
+    }
+
+    .container-inputbtn .btn-limpar::after {
+        margin-top: -1%;
+        margin-left: 5px;    
+    }
+}
+
+@media (max-width: 544px) {
+    
+    main h2 {
+        font-size: 15px;
+    }
+    
+    .container-dados {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lista-dados li p {
+        font-size: 10px;
+    }
+
+    .campo-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-dados img {
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        margin-bottom: 1em;
+    }
+
+    .container-inputbtn button {
+        width: 40%;
+        padding: 8px;
+        padding-right: 30px;
+    }
+
+    .container-inputbtn .btn-gerar::after {
+        top: 4%;
+        width: 30px;
+        height: 30px;
+    }
+
+    .container-inputbtn .btn-limpar::after {
+        margin-top: 1%;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;    
+    }
+
+    .container-inputbtn input {
+        width: 40%;
+        font-size: 8px;
+    }
+
+    .container-inputbtn input::placeholder {
+        font-size: 8px;
+    }
+
+    .footer-container {
+        font-size: 10px;
+    }
+}
 
 
 
