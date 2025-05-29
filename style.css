@@ -261,6 +261,11 @@ main h2 {
 }
 
 @media (max-width: 544px) {
+
+    main {
+        padding: 28px;
+        margin: 0px 35px;
+    }
     
     main h2 {
         font-size: 15px;
