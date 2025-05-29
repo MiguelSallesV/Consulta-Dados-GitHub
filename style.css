@@ -96,7 +96,7 @@ main h2 {
     border-style: none;
     font-weight: 600;
     
-    background-image: url('img/githubicon.svg');
+    background-image: url('assets/githubicon.svg');
     background-repeat: no-repeat;
     background-size: 17px 17px;
     background-position-y: center;
@@ -145,7 +145,7 @@ main h2 {
 .container-inputbtn .btn-gerar::after {
     content: '';
     position: absolute;
-    background-image: url('img/gerardados.svg');
+    background-image: url('assets/gerardados.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -158,7 +158,7 @@ main h2 {
 .container-inputbtn .btn-limpar::after {
     content: '';
     position: absolute;
-    background-image: url('img/trash-purple.svg');
+    background-image: url('assets/trash-purple.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;

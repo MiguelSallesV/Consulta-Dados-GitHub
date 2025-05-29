@@ -9,7 +9,7 @@ export default function listaVazia() {
         const paragrafoTxt = document.createElement('p');
         const imagem = document.querySelector('.imagem-padrao');
         
-        imagem.src = '/img/usericon.png';
+        imagem.src = '/assets/usericon.png';
         paragrafoTxt.innerText = `${titulo}:`;
         itemListaDados.appendChild(paragrafoTxt);
         listaDados.appendChild(itemListaDados);
