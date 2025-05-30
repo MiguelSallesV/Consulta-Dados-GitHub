@@ -1,5 +1,5 @@
 export default function listaVazia() {
-    const titulosDados = ['Nome','Tipo','Visibilidade','Email','Repositórios Públicos','Seguidores','Seguindo'];
+    const titulosDados = ['Nome','Tipo','Visibilidade','Local','Repositórios Públicos','Seguidores','Seguindo'];
     const listaDados = document.querySelector('.lista-dados');
 
     listaDados.innerHTML = "";

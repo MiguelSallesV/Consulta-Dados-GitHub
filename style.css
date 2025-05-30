@@ -87,7 +87,7 @@ main h2 {
 }
 
 .container-inputbtn input {
-    width: 30%;
+    width: 50%;
     background-color: var(--cor-principal);
     font-family: var(--fonte-principal);
     padding: 12px;
@@ -287,8 +287,8 @@ main h2 {
     }
 
     .container-dados img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin: 0px;
         margin-bottom: 1em;
     }
@@ -313,12 +313,11 @@ main h2 {
     }
 
     .container-inputbtn input {
-        width: 40%;
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .container-inputbtn input::placeholder {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .footer-container {

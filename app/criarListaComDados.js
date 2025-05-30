@@ -1,6 +1,6 @@
 export default function criarListaComDados(dados) {
-    const dadosRequisitados = [dados.name, dados.type, dados.user_view_type, dados.email, dados.public_repos, dados.followers, dados.following];
-    const titulosDados = ['Nome','Tipo','Visibilidade','Email','Repositórios Públicos','Seguidores','Seguindo'];
+    const dadosRequisitados = [dados.name, dados.type, dados.user_view_type, dados.location, dados.public_repos, dados.followers, dados.following];
+    const titulosDados = ['Nome','Tipo','Visibilidade','Local','Repositórios Públicos','Seguidores','Seguindo'];
     const listaDados = document.querySelector('.lista-dados');
 
     listaDados.innerHTML = '';
